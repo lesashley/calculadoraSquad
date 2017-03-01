@@ -1,8 +1,8 @@
 function calcSuma(){
   var num1=document.getElementById('num1').value;
   var num2=document.getElementById('num2').value;
+  var resultado=document.getElementById("resultado");
 
-  //result= num1 + num2;
-
-  document.getElementById("result").value=num1 +num2;
+  var suma = parseInt(num1) + parseInt(num2);
+  resultado.innerHTML=suma;
 }
