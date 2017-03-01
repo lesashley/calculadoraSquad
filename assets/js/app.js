@@ -4,22 +4,15 @@ document.getElementById('enviar').onclick = function operacion(){
   var operacion = document.getElementById('operacion').value;
 
   function suma(a,b){
-    var a = parseInt(a);
-    var b = parseInt(b);
-    return a+b;
+    return parseInt(a)+parseInt(b);
   }
-
   function resta(a,b){
-    var a = parseInt(a);
-    var b = parseInt(b);
-    return a-b;
+    return parseInt(a)-parseInt(b);
   }
 
   function division(a,b){
-    var a = parseInt(a);
-    var b = parseInt(b);
     if(b!=0){
-      return a/b;
+      return parseInt(a)/parseInt(b);
     }else{
       return "Valor indefinido";
     }
