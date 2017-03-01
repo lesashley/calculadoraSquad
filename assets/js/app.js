@@ -18,13 +18,15 @@ document.getElementById('enviar').onclick = function operacion(){
   function division(a,b){
     var a = parseInt(a);
     var b = parseInt(b);
-    return a/b;
+    if(b!=0){
+      return a/b;
+    }else{
+      return "Valor indefinido";
+    }
   }
 
   function multiplicacion(a,b){
-    var a = parseInt(a);
-    var b = parseInt(b);
-    return a*b;
+    return parseInt(a)*parseInt(b);
   }
 
   function potencia(a,b) {
@@ -34,9 +36,9 @@ document.getElementById('enviar').onclick = function operacion(){
   var respuesta;
     if(operacion == 1){ respuesta = suma(uno,dos);}
     else if(operacion == 2){respuesta=resta(uno,dos);}
-    else if(operacion == 3){respuesta=multiplica(unos,dos);}
-    else if(operacion == 4){respuesta = division(unos,dos);}
-    else if(operacion == 5){respuesta = potencia(unos,dos);}
+    else if(operacion == 3){respuesta= multiplicacion(uno,dos);}
+    else if(operacion == 4){respuesta = division(uno,dos);}
+    else if(operacion == 5){respuesta = potencia(uno,dos);}
 
   document.getElementById('resultado').innerHTML = respuesta;
 }
