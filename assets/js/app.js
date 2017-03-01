@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-var num1 = document.getElementById("num1").value;
-var num2 = document.getElementById("num2").value;
-var resultado = document.getElementById("resultado");
 
-function potencia(num1,num2) {
-  return resultado.innerHTML= Math.pow(num1,num2);
-}
-=======
 function operar(){
   var uno = document.getElementById('num1').value;
   var dos = document.getElementById('num2').value;
@@ -36,11 +28,16 @@ function operar(){
     return a*b;
   }
 
+  function potencia(a,b) {
+    return Math.pow(a,b);
+  }
+
   var respuesta;
     if(operacion == 1){ respuesta = suma(uno,dos);}
     else if(operacion == 2){respuesta=resta(uno,dos);}
     else if(operacion == 3){respuesta=multiplica(unos,dos);}
     else if(operacion == 4){respuesta = division(unos,dos);}
+    else if(operacion == 5){respuesta = potencia(unos,dos);}
 
   document.getElementById('resultado').innerHTML = respuesta;
 }
@@ -53,4 +50,3 @@ if(pregunta.value == 1){
 
 }
 */
->>>>>>> a61d8fb1a1f14d8be5300d1a179aee531bc73387
