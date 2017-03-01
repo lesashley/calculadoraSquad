@@ -1,23 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Calculadora</title>
+
+  <style type="text/css">
+  input{
+  margin: 0;
+  }
+  label{
+  display: inline-block;
+  width: 80px;
+  margin-right: 20px;
+  }
+  input[type="text"]{
+  margin-bottom: 5px;
+  }
+  </style>
 </head>
-<body background ="assets\images\fondo.jpg">
-  <form action="" ALIGN = center>
-    <font FACE = "candara">
-      <h1>
-        Calculadora Las Fénix</h1>
+<body background ="assets\images\lasfenix.jpg">
+  <form action="">
+      <font face = "Arial, Helvetica, sans-serif">
+      <h1>Calculadora Las Fénix</h1>
       <div>
         <label for="">Nombre:</label>
-        <input type="text" id="nombre" pattern="[A-ZÑa-zñá-ú\s]{1,}" required><br></br>
-        <label for="">Num 1:</label>
-        <input type="number" id="num1" required><br></br>
+        <input type="text" id="nombre" pattern="[A-ZÑa-zñá-ú\s]{1,}" required/><br></br>
+      </div>
+      <div>
+        <label for="">Número 1:</label>
+        <input type="number" id="num1" required/><br></br>
+      </div>
+      <div>
         <label for="">Operación:</label>
-        <select name="select" id="operacion" required>
+        <select name="select" id="operacion" required/>
           <option value="">Elegir una opción</option>
           <option value="1">Suma</option>
           <option value="2">Resta</option>
@@ -26,21 +43,15 @@
           <option value="5">Potencia</option>
           <option value="6">Raíz</option>
         </select><br></br>
-        <label for="">Num2:</label>
-        <input type="number" id="num2" required><br></br>
-        <label for="">Deseas hacer otra operación:</label>
-        <select name="select" id="elegir" required>
-          <option value="">Elegir una opción</option>
-          <option value="1">Sí</option>
-          <option value="2">No</option>
-        </select><br></br>
-        <button id="enviar">Enviar</button>
       </div>
-      <div id="resultado">
+      <div>
+        <label for="">Número:</label>
+        <input type="number" id="num2" required/><br></br>
+        <button id="enviar" onclick="operar(); return false;">Enviar</button>
       </div>
+      <div id="resultado"></div>
     </font>
   </form>
-  <script src="assets\js\app.js">
-  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
