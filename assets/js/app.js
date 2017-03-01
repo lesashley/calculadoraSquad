@@ -1,6 +1,6 @@
-var num1=document.getElementById('id').value;
-var num2=document.getElementById('').value;
-var opcion=document.getElementById('id').value;
+var num1=document.getElementById('num1').value;
+var num2=document.getElementById('num2').value;
+var opcion=document.getElementById('elegir').value;
 
 var resultado=document.getElementById();
 
@@ -21,4 +21,5 @@ function operacion(){
     case 6: raiz();break;
     default:
   }
+function otraOperacion()
 }
