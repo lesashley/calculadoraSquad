@@ -1,5 +1,5 @@
-  var num1 = document.getElementById('id').value;
-  var num2 = document.getElementById('').value;
+  var num1 = document.getElementById('num1').value;
+  var num2 = document.getElementById('num2').value;
   var resultado = document.getElementById();
 
 function multiplicar (){
