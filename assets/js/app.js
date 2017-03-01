@@ -27,11 +27,16 @@ document.getElementById('enviar').onclick = function operacion(){
     return a*b;
   }
 
+  function potencia(a,b) {
+    return Math.pow(a,b);
+  }
+
   var respuesta;
     if(operacion == 1){ respuesta = suma(uno,dos);}
     else if(operacion == 2){respuesta=resta(uno,dos);}
     else if(operacion == 3){respuesta=multiplica(unos,dos);}
     else if(operacion == 4){respuesta = division(unos,dos);}
+    else if(operacion == 5){respuesta = potencia(unos,dos);}
 
   document.getElementById('resultado').innerHTML = respuesta;
 }
