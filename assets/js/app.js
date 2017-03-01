@@ -1,25 +1,29 @@
-var num1=document.getElementById('num1').value;
-var num2=document.getElementById('num2').value;
-var opcion=document.getElementById('elegir').value;
 
-var resultado=document.getElementById();
+document.getElementById('enviar').onclick = function operacion(){
+  var opcion=document.getElementById('operacion').value;
+  var resultado=document.getElementById('resultado');
+  var respuesta;
 
-function division(){
-  while(num2!=0){
-    return resultado.innerHTML=num1/num2;
+  function division(){
+    var num1=document.getElementById('num1').value;
+    var num2=document.getElementById('num2').value;
+    if(num2!=0){
+      return num1/num2;
+    }else{
+      return "Valor indefinido";
+   }
   }
-  return resultado.innerHTML="Valor indefinido";
-}
 
-function operacion(){
-  switch (expression) {
-    case 1: suma();break;
-    case 2: resta();break;
-    case 3: multiplicacion();break;
-    case 4: division();break;
-    case 5: potencia();break;
-    case 6: raiz();break;
-    default:
+  switch (opcion) {
+    case 1: respuesta=suma();break;
+    case 2: respuesta=resta();break;
+    case 3: respuesta=multiplicacion();break;
+    case 4: respuesta=division(); break;
+    case 5: respuesta=potencia();break;
+    case 6: respuesta=raiz();break;
   }
-function otraOperacion()
+    resultado.innerHTML=respuesta;
 }
+document.getElementById('form').onsubmit=function(e){
+  e.preventDefault();
+};
