@@ -3,6 +3,7 @@ document.getElementById('enviar').onclick = function operacion(){
   var uno = document.getElementById('num1').value;
   var dos = document.getElementById('num2').value;
   var operacion = document.getElementById('operacion').value;
+  var elegir = document.getElementById('elegir').value;
 
   function suma(a,b){
     return parseInt(a)+parseInt(b);
