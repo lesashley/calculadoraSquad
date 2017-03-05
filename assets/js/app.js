@@ -12,7 +12,7 @@ document.getElementById('enviar').onclick = function operacion(){
     return parseInt(a)-parseInt(b);
   }
   function division(a,b){
-    if(b!=0){return parseInt(a)/parseInt(b);}
+    if(b!=0){return (parseInt(a)/parseInt(b)).toFixed(2);}
     else{return "Valor indefinido";}
   }
   function multiplicacion(a,b){
